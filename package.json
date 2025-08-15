@@ -1,0 +1,13 @@
+{
+  "name": "nicole-annen-portfolio",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve . -p 3000",
+    "start": "npx serve . -p 3000",
+    "build": "echo 'Build complete. Static files are ready for deployment.'"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}

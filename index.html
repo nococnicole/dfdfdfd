@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicole Annen | Marketing Program Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="js/tailwind-config.js"></script>
+</head>
+<body class="bg-white text-gray-900 min-h-screen">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur">
+        <div class="container flex h-16 max-w-screen-xl items-center justify-between mx-auto px-4">
+            <a href="#" class="flex items-center font-semibold text-lg font-heading tracking-tight text-black" id="typewriter-text">:></a>
+            
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="md:hidden flex items-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex gap-6">
+                <a href="#about" class="text-sm font-medium hover:text-primary">About</a>
+                <a href="#expertise" class="text-sm font-medium hover:text-primary">Expertise</a>
+                <a href="#portfolio" class="text-sm font-medium hover:text-primary">Portfolio</a>
+                <a href="content/nicole_annen_resume.pdf" class="text-sm font-medium hover:text-primary" target="_blank">Resume</a>
+                <a href="#contact" class="text-sm font-medium hover:text-primary">Contact</a>
+            </nav>
+        </div>
+        
+        <!-- Mobile Navigation Menu (hidden by default) -->
+        <div id="mobile-menu" class="hidden bg-white border-b">
+            <div class="container max-w-screen-xl mx-auto px-4 py-2">
+                <nav class="flex flex-col space-y-3">
+                    <a href="#about" class="text-sm font-medium hover:text-primary py-2">About</a>
+                    <a href="#expertise" class="text-sm font-medium hover:text-primary py-2">Expertise</a>
+                    <a href="#portfolio" class="text-sm font-medium hover:text-primary py-2">Portfolio</a>
+                    <a href="content/nicole_annen_resume.pdf" class="text-sm font-medium hover:text-primary py-2" target="_blank">Resume</a>
+                    <a href="#contact" class="text-sm font-medium hover:text-primary py-2">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+        <!-- Hero Section -->
+        <section id="about" class="w-full py-16 md:py-24 lg:py-32 bg-gradient-to-b from-white to-gray-50 section-fade">
+            <div class="container max-w-screen-xl px-4 mx-auto">
+                <div class="flex flex-col items-center text-center mb-16">
+                    <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl mb-4 font-heading text-black">Nicole Annen</h1>
+                    <p class="text-xl md:text-2xl font-medium text-gray-600 mb-6">Full Stack Marketing Pro</p>
+                    <div class="flex flex-col sm:flex-row gap-4 mt-2">
+                        <a href="content/nicole_annen_resume.pdf" class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90" target="_blank">View Resume</a>
+                        <a href="https://linkedin.com/in/nicoleannen" class="inline-flex h-10 items-center justify-center rounded-md border border-gray-300 px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-50" target="_blank"><i class="fab fa-linkedin-in mr-2"></i>Connect on LI</a>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <!-- Image now on the left for desktop and first for mobile -->
+                    <div class="relative h-[500px] overflow-hidden rounded-xl shadow-xl order-1 md:order-1">
+                        <img src="images/nicoleannen.jpg" alt="Nicole Annen" class="absolute inset-0 h-full w-full object-cover" style="transform: scaleX(-1);" />
+                    </div>
+                    <div class="space-y-6 text-left order-2 md:order-2">
+                        <div class="inline-block rounded-lg bg-gray-50 px-3 py-1 text-sm text-gray-600">About Me</div>
+                        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl font-heading text-black">Hi! I'm Nicole, nice to market with you.</h2>
+                        <p class="text-gray-600 leading-relaxed">
+                            I am a results-driven marketing professional with over 10 years of experience in B2B SaaS, excelling in cross-functional project management and demand generation. Throughout my career, I've worked with companies like Blue Margin, Digital Risk Group/Spadafy, Key Bridge Advisors, and Value Technology Foundation.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                            My expertise spans content creation, SEO, social media, email automation, and budget tracking. I'm proficient with various project management tools and passionate about tech-driven solutions like blockchain.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                            With a background in psychology from the University of Colorado, I apply psychological insights to craft marketing strategies that resonate with target audiences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Expertise Section -->
+        <section id="expertise" class="w-full py-12 md:py-24 bg-gray-50 section-fade">
+            <div class="container max-w-screen-xl px-4 mx-auto">
+                <div class="flex flex-col items-center justify-center space-y-4 text-center">
+                    <div class="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">Expertise</div>
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl font-heading text-black">Core Marketing Skills</h2>
+                    <p class="max-w-[700px] text-gray-600 md:text-lg">
+                        My diverse skill set allows me to develop and execute comprehensive marketing strategies that drive results.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12">
+                    <div class="flex flex-col items-center space-y-2 rounded-lg border border-gray-300 bg-white p-6 shadow-sm">
+                        <h3 class="text-xl font-bold font-heading text-black">Digital Marketing Strategy</h3>
+                        <p class="text-sm text-gray-600 text-center">
+                            Developing comprehensive marketing strategies that align with business objectives and drive measurable results.
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-2 rounded-lg border border-gray-300 bg-white p-6 shadow-sm">
+                        <h3 class="text-xl font-bold font-heading text-black">Project Management</h3>
+                        <p class="text-sm text-gray-600 text-center">
+                            Managing cross-functional projects using tools like Trello, Monday.com, Asana, Workday, and ClickUp.
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-2 rounded-lg border border-gray-300 bg-white p-6 shadow-sm">
+                        <h3 class="text-xl font-bold font-heading text-black">AI Marketing Automation</h3>
+                        <p class="text-sm text-gray-600 text-center">
+                            Leveraging AI tools like OpenAI, Anthropic, xAI, and Gemini to automate and enhance marketing efforts.
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-2 rounded-lg border border-gray-300 bg-white p-6 shadow-sm">
+                        <h3 class="text-xl font-bold font-heading text-black">SEO & Analytics</h3>
+                        <p class="text-sm text-gray-600 text-center">
+                            Optimizing content for search engines and analyzing data to drive strategic marketing decisions.
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-2 rounded-lg border border-gray-300 bg-white p-6 shadow-sm">
+                        <h3 class="text-xl font-bold font-heading text-black">Content Development</h3>
+                        <p class="text-sm text-gray-600 text-center">
+                            Creating compelling content using tools like Canva, Adobe Suite, Davinci, and CapCut.
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-2 rounded-lg border border-gray-300 bg-white p-6 shadow-sm">
+                        <h3 class="text-xl font-bold font-heading text-black">Website Optimization</h3>
+                        <p class="text-sm text-gray-600 text-center">
+                            Building and optimizing websites using WordPress, Webflow, TypeSet, Vibe Coding, Bolt, Loveable, and v0.
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-2 rounded-lg border border-gray-300 bg-white p-6 shadow-sm">
+                        <h3 class="text-xl font-bold font-heading text-black">Event Marketing</h3>
+                        <p class="text-sm text-gray-600 text-center">
+                            Planning and executing comprehensive event marketing campaigns to maximize attendance and engagement.
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-2 rounded-lg border border-gray-300 bg-white p-6 shadow-sm">
+                        <h3 class="text-xl font-bold font-heading text-black">LinkedIn & YouTube Ads</h3>
+                        <p class="text-sm text-gray-600 text-center">
+                            Creating and managing targeted advertising campaigns on LinkedIn and YouTube to reach professional audiences.
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-2 rounded-lg border border-gray-300 bg-white p-6 shadow-sm">
+                        <h3 class="text-xl font-bold font-heading text-black">Landing Pages</h3>
+                        <p class="text-sm text-gray-600 text-center">
+                            Designing and optimizing high-converting landing pages that drive lead generation and conversions.
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-2 rounded-lg border border-gray-300 bg-white p-6 shadow-sm">
+                        <h3 class="text-xl font-bold font-heading text-black">Social Media Marketing</h3>
+                        <p class="text-sm text-gray-600 text-center">
+                            Developing and executing social media strategies across multiple platforms to build brand awareness and engagement.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="container max-w-screen-xl px-4 mx-auto">
+                    <h2 class="text-2xl font-normal tracking-tighter sm:text-3xl mt-8 text-center font-heading text-black">Tool Expertise</h2>
+                    <div class="scroll-container mt-4">
+                        <div class="scroll-content">
+                        <div title="Adobe Photoshop">
+                            <img src="images/icons8-adobe-photoshop-50.svg" alt="Adobe Photoshop" width="50"/>
+                            <div class="text-[0.6rem] text-center">Photoshop</div>
+                        </div>
+                        <div title="Adobe Illustrator">
+                            <img src="images/icons8-illustrator-50.svg" alt="Adobe Illustrator" width="50"/>
+                            <div class="text-[0.6rem] text-center">Illustrator</div>
+                        </div>
+                        <div title="Adobe Premiere">
+                            <img src="images/icons8-adobe-premiere-pro.svg" alt="Adobe Premiere" width="50"/>
+                            <div class="text-[0.6rem] text-center">Premiere</div>
+                        </div>
+                        <div title="Adobe After Effects">
+                            <img src="images/icons8-adobe-after-effects.svg" alt="Adobe After Effects" width="50"/>
+                            <div class="text-[0.6rem] text-center">After Effects</div>
+                        </div>
+                        <div title="Adobe Creative Cloud Suite">
+                            <img src="images/icons8-adobe-creative-cloud.svg" alt="Adobe Creative Cloud Suite" width="50"/>
+                            <div class="text-[0.6rem] text-center">Creative Cloud</div>
+                        </div>
+                        <div title="WordPress">
+                            <img src="images/icons8-wordpress.svg" alt="WordPress" width="50"/>
+                            <div class="text-[0.6rem] text-center">WordPress</div>
+                        </div>
+                        <div title="Canva">
+                            <img src="images/icons8-canva.svg" alt="Canva" width="50"/>
+                            <div class="text-[0.6rem] text-center">Canva</div>
+                        </div>
+                        <div title="Davinci Resolve">
+                            <img src="images/icons8-davinci-resolve.svg" alt="Davinci Resolve" width="50"/>
+                            <div class="text-[0.6rem] text-center">Davinci Resolve</div>
+                        </div>
+                        <div title="CapCut">
+                            <img src="images/capcut.png" alt="CapCut" width="50"/>
+                            <div class="text-[0.6rem] text-center">CapCut</div>
+                        </div>
+                        <div title="Hubspot">
+                            <img src="images/icons8-hubspot.svg" alt="Hubspot" width="50"/>
+                            <div class="text-[0.6rem] text-center">Hubspot</div>
+                        </div>
+                        <div title="HootSuite">
+                            <img src="images/hootsuite-svgrepo-com.svg" alt="HootSuite" width="50"/>
+                            <div class="text-[0.6rem] text-center">HootSuite</div>
+                        </div>
+                        <div title="Salesforce">
+                            <img src="images/icons8-salesforce.svg" alt="Salesforce" width="50"/>
+                            <div class="text-[0.6rem] text-center">Salesforce</div>
+                        </div>
+                        <div title="Asana">
+                            <img src="images/icons8-asana.svg" alt="Asana" width="50"/>
+                            <div class="text-[0.6rem] text-center">Asana</div>
+                        </div>
+                        <div title="Monday">
+                            <img src="images/monday.svg" alt="Monday" width="50"/>
+                            <div class="text-[0.6rem] text-center">Monday</div>
+                        </div>
+                        <div title="ClickUp">
+                            <img src="images/clickup.png" alt="ClickUp" width="40"/>
+                            <div class="text-[0.6rem] text-center">ClickUp</div>
+                        </div>
+                        <div title="Google Ads">
+                            <img src="images/icons8-google-ads.svg" alt="Google Ads" width="50"/>
+                            <div class="text-[0.6rem] text-center">Google Ads</div>
+                        </div>
+                        <div title="Meta Ads">
+                            <img src="images/meta.svg" alt="Meta Ads" width="50"/>
+                            <div class="text-[0.6rem] text-center">Meta Ads</div>
+                        </div>
+                        <div title="Youtube Ads">
+                            <img src="images/icons8-youtube.svg" alt="Youtube Ads" width="50"/>
+                            <div class="text-[0.6rem] text-center">Youtube Ads</div>
+                        </div>
+                        <div title="SEMRush">
+                            <img src="images/semrush.webp" alt="SEMRush" width="50"/>
+                            <div class="text-[0.6rem] text-center">SEMRush</div>
+                        </div>
+                        <div title="OBS">
+                            <img src="images/obs.webp" alt="OBS" width="50"/>
+                            <div class="text-[0.6rem] text-center">OBS</div>
+                        </div>
+                        <div title="ElevenLabs">
+                            <img src="images/11labs.png" alt="ElevenLabs" width="50"/>
+                            <div class="text-[0.6rem] text-center">ElevenLabs</div>
+                        </div>
+                        <div title="Overcast">
+                            <img src="images/overcast.webp" alt="Overcast" width="50"/>
+                            <div class="text-[0.6rem] text-center">Overcast</div>
+                        </div>
+                        <div title="Claude">
+                            <img src="images/icons8-claude.svg" alt="Claude" width="50"/>
+                            <div class="text-[0.6rem] text-center">Claude</div>
+                        </div>
+                        <div title="ChatGPT">
+                            <img src="images/icons8-chatgpt.svg" alt="ChatGPT" width="50"/>
+                            <div class="text-[0.6rem] text-center">ChatGPT</div>
+                        </div>
+                        <div title="xAI">
+                            <img src="images/grok.svg" alt="xAI" width="50"/>
+                            <div class="text-[0.6rem] text-center">xAI</div>
+                        </div>
+                        </div>
+                        <div class="scroll-content">
+                        <div title="Adobe Photoshop">
+                            <img src="images/icons8-adobe-photoshop-50.svg" alt="Adobe Photoshop" width="50"/>
+                            <div class="text-[0.6rem] text-center">Photoshop</div>
+                        </div>
+                        <div title="Adobe Illustrator">
+                            <img src="images/icons8-illustrator-50.svg" alt="Adobe Illustrator" width="50"/>
+                            <div class="text-[0.6rem] text-center">Illustrator</div>
+                        </div>
+                        <div title="Adobe Premiere">
+                            <img src="images/icons8-adobe-premiere-pro.svg" alt="Adobe Premiere" width="50"/>
+                            <div class="text-[0.6rem] text-center">Premiere</div>
+                        </div>
+                        <div title="Adobe After Effects">
+                            <img src="images/icons8-adobe-after-effects.svg" alt="Adobe After Effects" width="50"/>
+                            <div class="text-[0.6rem] text-center">After Effects</div>
+                        </div>
+                        <div title="Adobe Creative Cloud Suite">
+                            <img src="images/icons8-adobe-creative-cloud.svg" alt="Adobe Creative Cloud Suite" width="50"/>
+                            <div class="text-[0.6rem] text-center">Creative Cloud</div>
+                        </div>
+                        <div title="WordPress">
+                            <img src="images/icons8-wordpress.svg" alt="WordPress" width="50"/>
+                            <div class="text-[0.6rem] text-center">WordPress</div>
+                        </div>
+                        <div title="Canva">
+                            <img src="images/icons8-canva.svg" alt="Canva" width="50"/>
+                            <div class="text-[0.6rem] text-center">Canva</div>
+                        </div>
+                        <div title="Davinci Resolve">
+                            <img src="images/icons8-davinci-resolve.svg" alt="Davinci Resolve" width="50"/>
+                            <div class="text-[0.6rem] text-center">Davinci Resolve</div>
+                        </div>
+                        <div title="CapCut">
+                            <img src="images/capcut.png" alt="CapCut" width="50"/>
+                            <div class="text-[0.6rem] text-center">CapCut</div>
+                        </div>
+                        <div title="Hubspot">
+                            <img src="images/icons8-hubspot.svg" alt="Hubspot" width="50"/>
+                            <div class="text-[0.6rem] text-center">Hubspot</div>
+                        </div>
+                        <div title="HootSuite">
+                            <img src="images/hootsuite-svgrepo-com.svg" alt="HootSuite" width="50"/>
+                            <div class="text-[0.6rem] text-center">HootSuite</div>
+                        </div>
+                        <div title="Salesforce">
+                            <img src="images/icons8-salesforce.svg" alt="Salesforce" width="50"/>
+                            <div class="text-[0.6rem] text-center">Salesforce</div>
+                        </div>
+                        <div title="Asana">
+                            <img src="images/icons8-asana.svg" alt="Asana" width="50"/>
+                            <div class="text-[0.6rem] text-center">Asana</div>
+                        </div>
+                        <div title="Monday">
+                            <img src="images/monday.svg" alt="Monday" width="50"/>
+                            <div class="text-[0.6rem] text-center">Monday</div>
+                        </div>
+                        <div title="ClickUp">
+                            <img src="images/clickup.png" alt="ClickUp" width="40"/>
+                            <div class="text-[0.6rem] text-center">ClickUp</div>
+                        </div>
+                        <div title="Google Ads">
+                            <img src="images/icons8-google-ads.svg" alt="Google Ads" width="50"/>
+                            <div class="text-[0.6rem] text-center">Google Ads</div>
+                        </div>
+                        <div title="Meta Ads">
+                            <img src="images/meta.svg" alt="Meta Ads" width="50"/>
+                            <div class="text-[0.6rem] text-center">Meta Ads</div>
+                        </div>
+                        <div title="Youtube Ads">
+                            <img src="images/icons8-youtube.svg" alt="Youtube Ads" width="50"/>
+                            <div class="text-[0.6rem] text-center">Youtube Ads</div>
+                        </div>
+                        <div title="SEMRush">
+                            <img src="images/semrush.webp" alt="SEMRush" width="50"/>
+                            <div class="text-[0.6rem] text-center">SEMRush</div>
+                        </div>
+                        <div title="OBS">
+                            <img src="images/obs.webp" alt="OBS" width="50"/>
+                            <div class="text-[0.6rem] text-center">OBS</div>
+                        </div>
+                        <div title="ElevenLabs">
+                            <img src="images/11labs.png" alt="ElevenLabs" width="50"/>
+                            <div class="text-[0.6rem] text-center">ElevenLabs</div>
+                        </div>
+                        <div title="Overcast">
+                            <img src="images/overcast.webp" alt="Overcast" width="50"/>
+                            <div class="text-[0.6rem] text-center">Overcast</div>
+                        </div>
+                        <div title="Claude">
+                            <img src="images/icons8-claude.svg" alt="Claude" width="50"/>
+                            <div class="text-[0.6rem] text-center">Claude</div>
+                        </div>
+                        <div title="ChatGPT">
+                            <img src="images/icons8-chatgpt.svg" alt="ChatGPT" width="50"/>
+                            <div class="text-[0.6rem] text-center">ChatGPT</div>
+                        </div>
+                        <div title="xAI">
+                            <img src="images/grok.svg" alt="xAI" width="50"/>
+                            <div class="text-[0.6rem] text-center">xAI</div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="w-full py-12 md:py-24 section-fade">
+        <div class="container max-w-screen-xl px-4 mx-auto">
+            <div class="flex flex-col items-center justify-center space-y-4 text-center">
+                <div class="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">Portfolio</div>
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl font-heading text-black">Featured Work</h2>
+                <p class="max-w-[700px] text-gray-600 md:text-lg">
+                    A selection of my recent marketing projects across various industries and formats.
+                </p>
+            </div>
+            
+            <!-- Portfolio Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+                
+                <!-- Digital Marketing -->
+                <div class="portfolio-card rounded-lg border border-gray-300 bg-white shadow-sm hover:shadow-md transition-all cursor-pointer p-6 category-card" data-category="digital-marketing">
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold font-heading text-black mb-2">Digital Marketing</h3>
+                        <p class="text-sm text-gray-600">Strategic digital marketing campaigns designed to increase brand visibility and drive conversions.</p>
+                    </div>
+                </div>
+                
+                <!-- Event Marketing -->
+                <div class="portfolio-card rounded-lg border border-gray-300 bg-white shadow-sm hover:shadow-md transition-all cursor-pointer p-6 category-card" data-category="event-marketing">
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold font-heading text-black mb-2">Event Marketing</h3>
+                        <p class="text-sm text-gray-600">Comprehensive event marketing strategies to maximize attendance and engagement at corporate events.</p>
+                    </div>
+                </div>
+                
+                <!-- Landing Pages -->
+                <div class="portfolio-card rounded-lg border border-gray-300 bg-white shadow-sm hover:shadow-md transition-all cursor-pointer p-6 category-card" data-category="landing-pages">
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold font-heading text-black mb-2">Landing Pages</h3>
+                        <p class="text-sm text-gray-600">High-converting landing pages designed to capture leads and drive specific marketing objectives.</p>
+                    </div>
+                </div>
+                
+                <!-- One Pagers -->
+                <div class="portfolio-card rounded-lg border border-gray-300 bg-white shadow-sm hover:shadow-md transition-all cursor-pointer p-6 category-card" data-category="one-pagers">
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold font-heading text-black mb-2">One Pagers</h3>
+                        <p class="text-sm text-gray-600">Designed and developed concise one-page marketing materials that effectively communicate value propositions.</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Second Row for Podcasting -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6 justify-center">
+                <!-- Podcasting (centered in second row) -->
+                <div class="portfolio-card rounded-lg border border-gray-300 bg-white shadow-sm hover:shadow-md transition-all cursor-pointer p-6 category-card lg:col-start-2 lg:col-span-2" data-category="podcasting">
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold font-heading text-black mb-2">Podcasting</h3>
+                        <p class="text-sm text-gray-600">Full-service podcast production, including content strategy, recording, editing, and promotion to build audience engagement.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Content Display Area (spans full width) -->
+            <div class="mt-12 category-content-container">
+                <!-- Digital Marketing Content -->
+                <div id="digital-marketing-content" class="category-content hidden">
+                    <h2 class="text-2xl font-bold mb-6 font-heading text-black">Digital Marketing</h2>
+                    <div class="space-y-8">
+                        <div id="digital-marketing-guides" class="space-y-4">
+                            <h3 class="text-xl font-semibold font-heading text-black">Guides</h3>
+                            <ul class="grid grid-cols-1 md:grid-cols-3 gap-4" id="guides-list"></ul>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="space-y-6">
+                                <div id="digital-marketing-slides" class="space-y-4">
+                                    <h3 class="text-xl font-semibold font-heading text-black">Slides</h3>
+                                    <ul class="space-y-3" id="slides-list"></ul>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-6">
+                                <div id="digital-marketing-social" class="space-y-4">
+                                    <h3 class="text-xl font-semibold font-heading text-black">Social Media</h3>
+                                    <ul class="space-y-3" id="social-media-list"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="digital-marketing-videos" class="space-y-4 mt-8">
+                            <h3 class="text-xl font-semibold font-heading text-black">Videos</h3>
+                            <ul class="space-y-3" id="videos-list"></ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event Marketing Content -->
+                <div id="event-marketing-content" class="category-content hidden">
+                    <h2 class="text-2xl font-bold mb-6 font-heading text-black">Event Marketing</h2>
+                    <div id="event-marketing-list"></div>
+                </div>
+                
+                <div id="landing-pages-content" class="category-content hidden">
+                    <h2 class="text-2xl font-bold mb-6 font-heading text-black">Landing Pages</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="border rounded-lg bg-white shadow-sm hover:shadow-md transition-all cursor-pointer">
+                            <div class="p-4">
+                                <h3 class="text-lg font-bold font-heading text-black mb-2">Blue Margin Lead Generation</h3>
+                                <p class="text-sm text-gray-600 mb-3">High-converting landing page designed to capture qualified leads for Blue Margin's data services.</p>
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Conversion Rate: 12%</span>
+                                    <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">A/B Tested</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="border rounded-lg bg-white shadow-sm hover:shadow-md transition-all cursor-pointer">
+                            <div class="p-4">
+                                <h3 class="text-lg font-bold font-heading text-black mb-2">Spadafy VDI Services</h3>
+                                <p class="text-sm text-gray-600 mb-3">Targeted landing page for VDI managed services with clear value proposition and call-to-action.</p>
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Mobile Optimized</span>
+                                    <span class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Lead Forms</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="border rounded-lg bg-white shadow-sm hover:shadow-md transition-all cursor-pointer">
+                            <div class="p-4">
+                                <h3 class="text-lg font-bold font-heading text-black mb-2">Event Registration Pages</h3>
+                                <p class="text-sm text-gray-600 mb-3">Custom event registration landing pages with integrated payment processing and attendee management.</p>
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-block bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded">Payment Integration</span>
+                                    <span class="inline-block bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Analytics</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="border rounded-lg bg-white shadow-sm hover:shadow-md transition-all cursor-pointer">
+                            <div class="p-4">
+                                <h3 class="text-lg font-bold font-heading text-black mb-2">Product Launch Pages</h3>
+                                <p class="text-sm text-gray-600 mb-3">Strategic product launch landing pages with countdown timers, social proof, and conversion optimization.</p>
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded">Countdown Timer</span>
+                                    <span class="inline-block bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">Social Proof</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- One Pagers Content -->
+                <div id="one-pagers-content" class="category-content hidden">
+                    <h2 class="text-2xl font-bold mb-6 font-heading text-black">One Pagers</h2>
+                    <div id="one-pagers-list"></div>
+                </div>
+                
+                <!-- Podcasting Content -->
+                <div id="podcasting-content" class="category-content hidden">
+                    <img src="images/channels4_banner.jpg" alt="Dashboard Effect Podcast Banner" class="w-full rounded-lg mb-4" />
+                    <p class="text-xl text-primary mb-6 font-medium text-center">Nicole edits, produces, and manages distribution and marketing for the Dashboard Effect Podcast, part of Blue Margin<br>Over 7,000 followers!</p>
+                    
+                    <h2 class="text-2xl font-bold mb-6 font-heading text-black">Find the podcast here:</h2>
+                    
+                    <!-- Podcast Platform Cards -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                        <!-- YouTube Card -->
+                        <div class="portfolio-card rounded-lg overflow-hidden border border-gray-300 bg-white shadow-sm">
+                            <div class="relative aspect-video overflow-hidden">
+                                <img src="images/youtube.png" alt="YouTube" class="h-full w-full object-cover transition-all hover:scale-105" />
+                                <div class="portfolio-overlay absolute inset-0 bg-black/60 flex items-center justify-center">
+                                    <div class="text-center p-4">
+                                        <h3 class="text-lg font-bold text-white font-heading">YouTube</h3>
+                                        <p class="text-sm text-white/80">The Dashboard Effect Podcast</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold font-heading text-black">YouTube</h3>
+                                <p class="text-sm text-gray-600 mt-1">Watch the latest episodes and interviews.</p>
+                                <a href="https://www.youtube.com/@thedashboardeffectpodcast" target="_blank" class="inline-block mt-2 text-primary hover:underline">Watch Now</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Apple Podcasts Card -->
+                        <div class="portfolio-card rounded-lg overflow-hidden border border-gray-300 bg-white shadow-sm">
+                            <div class="relative aspect-video overflow-hidden">
+                                <img src="images/apple.webp" alt="Apple Podcasts" class="h-full w-full object-cover transition-all hover:scale-105" />
+                                <div class="portfolio-overlay absolute inset-0 bg-black/60 flex items-center justify-center">
+                                    <div class="text-center p-4">
+                                        <h3 class="text-lg font-bold text-white font-heading">Apple Podcasts</h3>
+                                        <p class="text-sm text-white/80">The Dashboard Effect Podcast</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold font-heading text-black">Apple Podcasts</h3>
+                                <p class="text-sm text-gray-600 mt-1">Listen on your favorite Apple devices.</p>
+                                <a href="https://podcasts.apple.com/us/podcast/the-dashboard-effect/id1634065977" target="_blank" class="inline-block mt-2 text-primary hover:underline">Listen Now</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Spotify Card -->
+                        <div class="portfolio-card rounded-lg overflow-hidden border border-gray-300 bg-white shadow-sm">
+                            <div class="relative aspect-video overflow-hidden">
+                                <img src="images/spotify.png" alt="Spotify" class="h-full w-full object-cover transition-all hover:scale-105" />
+                                <div class="portfolio-overlay absolute inset-0 bg-black/60 flex items-center justify-center">
+                                    <div class="text-center p-4">
+                                        <h3 class="text-lg font-bold text-white font-heading">Spotify</h3>
+                                        <p class="text-sm text-white/80">The Dashboard Effect Podcast</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold font-heading text-black">Spotify</h3>
+                                <p class="text-sm text-gray-600 mt-1">Stream episodes on Spotify.</p>
+                                <a href="https://open.spotify.com/show/1OGu0m8GV0Ga3iVrq6L536" target="_blank" class="inline-block mt-2 text-primary hover:underline">Stream Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Back button -->
+                <div class="mt-8 text-center">
+                    <button id="back-to-categories" class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow hidden">
+                        Back to Categories
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="w-full py-12 md:py-24 bg-gray-50 section-fade">
+        <div class="container max-w-screen-xl px-4 mx-auto">
+            <div class="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+                <div class="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">Resume</div>
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl font-heading text-black">Professional Experience</h2>
+                <p class="max-w-[700px] text-gray-600 md:text-lg">
+                    My career journey and qualifications in marketing and content creation.
+                </p>
+            </div>
+            
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-300">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold font-heading text-black">Marketing Program Manager & Lead Content Creator</h3>
+                            <p class="text-lg text-gray-600">Blue Margin, Inc</p>
+                        </div>
+                        <div class="text-gray-600">
+                            <p>Hybrid - Fort Collins, CO</p>
+                            <p>December 2023 – Present</p>
+                        </div>
+                    </div>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                        <li>Provided strategy and execution of all marketing, product branding, and social media campaigns, resulting in first profitable year (2024).</li>
+                        <li>Managed and produced/edited 'The Dashboard Effort' podcast, driving a 130% ROI on ad spend and 1400% YouTube subscriber growth in 9 months via analytics-driven reallocation.</li>
+                        <li>Liaised between sales and product teams, delivering on-demand content, optimized landing pages, and AI-driven email campaigns.</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-300">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold font-heading text-black">Marketing Specialist (Contract)</h3>
+                            <p class="text-lg text-gray-600">Digital Risk Group / Spadafy</p>
+                        </div>
+                        <div class="text-gray-600">
+                            <p>Remote - Seattle, WA</p>
+                            <p>June 2023 – November 2023</p>
+                        </div>
+                    </div>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                        <li>Developed campaigns for VDI Managed Services, securing #1 SEO rankings for key search terms.</li>
+                        <li>Designed conference collateral & booth materials for VMWare Explore, enhancing brand visibility.</li>
+                        <li>Produced video advertising content, driving engagement and lead generation.</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-300">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold font-heading text-black">Associate Consultant (Contract)</h3>
+                            <p class="text-lg text-gray-600">Key Bridge Advisors</p>
+                        </div>
+                        <div class="text-gray-600">
+                            <p>Remote - Washington, D.C.</p>
+                            <p>October 2022 – October 2023</p>
+                        </div>
+                    </div>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                        <li>• Google Analytics Certified</li>
+                        <li>• HubSpot Content Marketing Certified</li>
+                        <li>• Facebook Blueprint Certified</li>
+                        <li>• Salesforce Marketing Cloud Certified</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 font-heading text-black">Education</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="font-semibold font-heading text-black">Bachelor of Arts - Psychology</p>
+                            <p class="text-gray-600">University of Colorado | Boulder, CO</p>
+                            <p class="text-gray-600">August 2018 – May 2021</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold font-heading text-black">Associate of Arts and Sciences</p>
+                            <p class="text-gray-600">Johnson County Community College | Overland Park, KS</p>
+                            <p class="text-gray-600">2007 – 2010</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4 font-heading text-black">Certifications</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                        <li>Become an AI-Powered Marketer – SEMrush (Jul 2024)</li>
+                        <li>Mastering YouTube Search Trends and SEO Strategies – SEMrush (Apr 2024)</li>
+                        <li>HubSpot CMS for Marketers – HubSpot (Feb 2024)</li>
+                        <li>Digital Marketing and E-Commerce – Google (Mar 2023)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="w-full py-12 md:py-24 section-fade">
+        <div class="container max-w-screen-xl px-4 mx-auto">
+            <div class="flex flex-col items-center justify-center space-y-4 text-center mb-8">
+                <div class="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">Contact</div>
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl font-heading text-black">Get In Touch</h2>
+                <p class="max-w-[700px] text-gray-600 md:text-lg">
+                    Interested in working together? Reach out to discuss your marketing needs.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
+                <!-- Schedule a Meeting Card -->
+                <div class="bg-white rounded-lg border border-gray-300 shadow-sm hover:shadow-md transition-all p-4 flex flex-col items-center text-center">
+                    <div class="rounded-full bg-primary/10 p-3 mb-2">
+                        <i class="fas fa-calendar-alt text-primary"></i>
+                    </div>
+                    <h3 class="font-semibold text-base mb-1 font-heading text-black">Calendly</h3>
+                    <p class="text-gray-600 text-xs mb-2">Book a meeting</p>
+                    <a href="https://calendly.com/nicolecannen" target="_blank" class="inline-flex h-8 items-center justify-center rounded-md bg-primary px-3 text-xs font-medium text-primary-foreground shadow mt-auto">
+                        Book Now
+                    </a>
+                </div>
+                
+                <!-- Email Card -->
+                <div class="bg-white rounded-lg border border-gray-300 shadow-sm hover:shadow-md transition-all p-4 flex flex-col items-center text-center">
+                    <div class="rounded-full bg-primary/10 p-3 mb-2">
+                        <i class="fas fa-envelope text-primary"></i>
+                    </div>
+                    <h3 class="font-semibold text-base mb-1 font-heading text-black">Email</h3>
+                    <p class="text-gray-600 text-xs mb-2">Send a message</p>
+                    <a href="mailto:nicolecannen@gmail.com" class="inline-flex h-8 items-center justify-center rounded-md bg-primary px-3 text-xs font-medium text-primary-foreground shadow mt-auto">
+                        Email Me
+                    </a>
+                </div>
+                
+                <!-- LinkedIn Card -->
+                <div class="bg-white rounded-lg border border-gray-300 shadow-sm hover:shadow-md transition-all p-4 flex flex-col items-center text-center">
+                    <div class="rounded-full bg-primary/10 p-3 mb-2">
+                        <i class="fab fa-linkedin-in text-primary"></i>
+                    </div>
+                    <h3 class="font-semibold text-base mb-1 font-heading text-black">LinkedIn</h3>
+                    <p class="text-gray-600 text-xs mb-2">Connect with me</p>
+                    <a href="https://linkedin.com/in/nicoleannen" target="_blank" class="inline-flex h-8 items-center justify-center rounded-md bg-primary px-3 text-xs font-medium text-primary-foreground shadow mt-auto">
+                        Connect
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="w-full py-6 bg-primary text-primary-foreground">
+        <div class="container max-w-screen-xl px-4 mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; 2025 Nicole Annen. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://linkedin.com/in/nicoleannen" target="_blank" class="hover:text-white/80"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://nicoleannen.com" target="_blank" class="hover:text-white/80"><i class="fas fa-globe"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/typewriter.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/portfolio-content.js"></script>
+    <script src="js/modals.js"></script>
+    <script src="js/event-marketing.js"></script>
+    <script src="js/podcasting.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+/* Main Styles */
+h1, h2, h3 { font-family: 'Satoshi', 'Inter', sans-serif; }
+.section-fade { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
+.section-fade.visible { opacity: 1; transform: translateY(0); }
+.portfolio-card { transition: all 0.3s ease; }
+.portfolio-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+
+/* Continuous scrolling animation */
+.scroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.scroll-content {
+    display: inline-flex;
+    gap: 3rem;
+    animation: scroll 30s linear infinite;
+}
+
+.scroll-content > div {
+    flex: 0 0 auto;
+    min-width: 60px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Pause animation on hover */
+.scroll-container:hover .scroll-content {
+    animation-play-state: paused;
+}
