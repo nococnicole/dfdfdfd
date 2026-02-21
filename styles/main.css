@@ -15,7 +15,7 @@ h1, h2, h3 { font-family: 'Satoshi', 'Inter', sans-serif; }
 .scroll-content {
     display: inline-flex;
     gap: 3rem;
-    animation: scroll 30s linear infinite;
+    animation: scroll 60s linear infinite;
 }
 
 .scroll-content > div {
