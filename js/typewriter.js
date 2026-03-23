@@ -2,11 +2,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     const typewriterElement = document.getElementById('typewriter-text');
     const phrases = [
-        "Nicole Annen",
-        "Full Stack Marketing Pro",
-        "Brand Building for B2B",
-        "Artist by Night, Marketing Unicorn by Day",
-        "Creating a Signal that Shines Through The Noise"
+        "Full Stack Marketing",
+        "Podcasting",
+        "Web Development",
+        "Content Creation",
+        "Lead Generation",
+        "Sales Enablement",
+        "Event Marketing",
+        "Technical Writing",
+        "Video Editing",
+        "Brand Management"
     ];
     
     let phraseIndex = 0;
