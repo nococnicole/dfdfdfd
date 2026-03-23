@@ -5,6 +5,14 @@ h1, h2, h3 { font-family: 'Satoshi', 'Inter', sans-serif; }
 .portfolio-card { transition: all 0.3s ease; }
 .portfolio-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
 
+.blog-card { transition: box-shadow 0.2s ease, transform 0.2s ease; }
+.blog-card:hover { transform: translateY(-3px); }
+.blog-body h3 { font-size: 1.1rem; font-weight: 700; margin-top: 1.25rem; margin-bottom: 0.5rem; color: #111; }
+.blog-body ul { list-style: disc; padding-left: 1.5rem; }
+.blog-body li { margin-bottom: 0.35rem; }
+.blog-body p { margin-bottom: 0.75rem; line-height: 1.7; }
+.line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+
 /* Continuous scrolling animation */
 .scroll-container {
     overflow: hidden;
