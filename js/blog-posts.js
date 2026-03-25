@@ -90,7 +90,8 @@ function renderPostDetail(post) {
 }
 
 function openPost(post) {
-  document.getElementById('blog-grid-view').classList.add('hidden');
+  const gridView = document.getElementById('blog-grid-view') || document.getElementById('blog-all-grid-view');
+  if (gridView) gridView.classList.add('hidden');
   document.getElementById('blog-post-detail').classList.remove('hidden');
   renderPostDetail(post);
   window.portfolioItemSelected = true;
@@ -98,7 +99,8 @@ function openPost(post) {
 
 function closePost() {
   document.getElementById('blog-post-detail').classList.add('hidden');
-  document.getElementById('blog-grid-view').classList.remove('hidden');
+  const gridView = document.getElementById('blog-grid-view') || document.getElementById('blog-all-grid-view');
+  if (gridView) gridView.classList.remove('hidden');
   window.portfolioItemSelected = false;
 }
 
@@ -155,9 +157,14 @@ function renderGrid(posts, gridEl) {
   posts.forEach(post => gridEl.appendChild(renderCard(post)));
 }
 
+const IS_HOME_PAGE = document.getElementById('blog-posts-grid') && !document.getElementById('blog-all-posts-grid');
+const HOME_LIMIT = 3;
+
 document.addEventListener('DOMContentLoaded', async () => {
-  const gridEl = document.getElementById('blog-posts-grid');
+  const gridEl = document.getElementById('blog-posts-grid') || document.getElementById('blog-all-posts-grid');
   if (!gridEl) return;
+
+  const isHome = gridEl.id === 'blog-posts-grid';
 
   gridEl.innerHTML = `
     <div class="col-span-1 sm:col-span-2 lg:col-span-3 flex justify-center py-12">
@@ -166,6 +173,17 @@ document.addEventListener('DOMContentLoaded', async () => {
   `;
 
   const posts = await fetchPosts();
-  renderFilterBar(posts, gridEl);
-  renderGrid(posts, gridEl);
+
+  if (isHome) {
+    const limited = posts.slice(0, HOME_LIMIT);
+    renderGrid(limited, gridEl);
+
+    const viewAllWrap = document.getElementById('blog-view-all-wrap');
+    if (viewAllWrap && posts.length > HOME_LIMIT) {
+      viewAllWrap.classList.remove('hidden');
+    }
+  } else {
+    renderFilterBar(posts, gridEl);
+    renderGrid(posts, gridEl);
+  }
 });

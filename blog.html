@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Posts | Nicole Annen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="js/tailwind-config.js"></script>
+</head>
+<body class="bg-white text-gray-900 min-h-screen">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur">
+        <div class="container flex h-16 max-w-screen-xl items-center justify-between mx-auto px-4">
+            <a href="index.html" class="flex items-center font-semibold text-lg font-heading tracking-tight text-black">:></a>
+            <button id="mobile-menu-button" class="md:hidden flex items-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+            <nav class="hidden md:flex gap-6">
+                <a href="index.html#about" class="text-sm font-medium hover:text-primary">About</a>
+                <a href="index.html#expertise" class="text-sm font-medium hover:text-primary">Expertise</a>
+                <a href="index.html#portfolio" class="text-sm font-medium hover:text-primary">Portfolio</a>
+                <a href="content/nicole_annen_resume.pdf" class="text-sm font-medium hover:text-primary" target="_blank">Resume</a>
+                <a href="index.html#contact" class="text-sm font-medium hover:text-primary">Contact</a>
+            </nav>
+        </div>
+        <div id="mobile-menu" class="hidden bg-white border-b">
+            <div class="container max-w-screen-xl mx-auto px-4 py-2">
+                <nav class="flex flex-col space-y-3">
+                    <a href="index.html#about" class="text-sm font-medium hover:text-primary py-2">About</a>
+                    <a href="index.html#expertise" class="text-sm font-medium hover:text-primary py-2">Expertise</a>
+                    <a href="index.html#portfolio" class="text-sm font-medium hover:text-primary py-2">Portfolio</a>
+                    <a href="content/nicole_annen_resume.pdf" class="text-sm font-medium hover:text-primary py-2" target="_blank">Resume</a>
+                    <a href="index.html#contact" class="text-sm font-medium hover:text-primary py-2">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <main class="w-full py-12 md:py-20">
+        <div class="container max-w-screen-xl px-4 mx-auto">
+
+            <!-- Back link + heading -->
+            <div id="blog-all-grid-view">
+                <a href="index.html#portfolio" class="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline mb-8">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                    Back to Portfolio
+                </a>
+
+                <div class="flex flex-col items-center justify-center space-y-4 text-center mb-2">
+                    <div class="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">Portfolio</div>
+                    <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl font-heading text-black">All Posts</h1>
+                    <p class="max-w-[700px] text-gray-600 md:text-lg">
+                        All of my marketing projects, insights, and case studies.
+                    </p>
+                </div>
+
+                <!-- Filter Bar -->
+                <div id="blog-filter-bar" class="flex flex-wrap gap-2 mt-8 justify-center"></div>
+
+                <!-- Posts Grid -->
+                <div id="blog-all-posts-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8"></div>
+            </div>
+
+            <!-- Post Detail View -->
+            <div id="blog-post-detail" class="hidden mt-10 max-w-3xl mx-auto"></div>
+
+        </div>
+    </main>
+
+    <footer class="w-full py-6 bg-primary text-primary-foreground">
+        <div class="container max-w-screen-xl px-4 mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2025 Nicole Annen. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="https://linkedin.com/in/nicoleannen" target="_blank" class="hover:text-white/80"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://nicoleannen.com" target="_blank" class="hover:text-white/80"><i class="fas fa-globe"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/blog-posts.js"></script>
+</body>
+</html>
