@@ -9,6 +9,7 @@ const CATEGORY_LABELS = {
   'video': 'Video',
   'landing-pages': 'Landing Pages',
   'one-pagers': 'One Pagers',
+  'web-development': 'Web Development',
 };
 
 const CATEGORY_COLORS = {
@@ -19,6 +20,7 @@ const CATEGORY_COLORS = {
   'video': 'bg-orange-100 text-orange-800',
   'landing-pages': 'bg-green-100 text-green-800',
   'one-pagers': 'bg-gray-100 text-gray-700',
+  'web-development': 'bg-cyan-100 text-cyan-800',
 };
 
 async function fetchPosts() {
