@@ -6,6 +6,7 @@ const CATEGORY_LABELS = {
   'event-marketing': 'Event Marketing',
   'podcasting': 'Podcasting',
   'branding': 'Branding',
+  'video': 'Video',
   'landing-pages': 'Landing Pages',
   'one-pagers': 'One Pagers',
 };
@@ -15,6 +16,7 @@ const CATEGORY_COLORS = {
   'event-marketing': 'bg-amber-100 text-amber-800',
   'podcasting': 'bg-rose-100 text-rose-800',
   'branding': 'bg-teal-100 text-teal-800',
+  'video': 'bg-orange-100 text-orange-800',
   'landing-pages': 'bg-green-100 text-green-800',
   'one-pagers': 'bg-gray-100 text-gray-700',
 };
