@@ -31,6 +31,10 @@ h1, h2, h3 { font-family: 'Satoshi', 'Inter', sans-serif; }
     min-width: 60px;
     text-align: center;
     white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes scroll {
@@ -47,9 +51,17 @@ h1, h2, h3 { font-family: 'Satoshi', 'Inter', sans-serif; }
     animation-play-state: paused;
 }
 
-/* Make all tool icons black */
+/* Make all tool icons black, consistent size, centered (except Clay which keeps its rainbow colors) */
 .scroll-content img {
     filter: brightness(0) saturate(100%);
+    height: 36px;
+    width: auto;
+    max-width: 50px;
+    object-fit: contain;
+}
+
+.scroll-content img[src*="clay.svg"] {
+    filter: none;
 }
 
 /* Keep the scroll-content blocks evenly spaced */
