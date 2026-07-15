@@ -46,3 +46,13 @@ h1, h2, h3 { font-family: 'Satoshi', 'Inter', sans-serif; }
 .scroll-container:hover .scroll-content {
     animation-play-state: paused;
 }
+
+/* Make all tool icons black */
+.scroll-content img {
+    filter: brightness(0) saturate(100%);
+}
+
+/* Keep the scroll-content blocks evenly spaced */
+.scroll-content:first-of-type {
+    padding-right: 3rem;
+}
